@@ -5,7 +5,7 @@ var G_URL = "http://gravatar.com/avatar";
 
 var Gravatars = React.createClass({
   render: function() {
-    var users = WheresOurData.map(function(user){
+    var users = this.props.data.map(function(user){
       var size = 36;
       var hash = md5(user.email);
       var url = G_URL + '/' + hash + '?s=' + size;
@@ -14,7 +14,9 @@ var Gravatars = React.createClass({
     return (
       <div>
         <h1>Hello, Gravatars!</h1>
-        wheres our HTML?
+        <ul>
+          {users}
+        </ul>
       </div>
     )
   }

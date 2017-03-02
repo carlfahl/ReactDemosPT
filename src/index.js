@@ -7,6 +7,8 @@ import App from './Beverages';
 import NumberMapsAndFilters from './NumberMapsAndFilters';
 import FoodData from './data/food';
 import FoodFilter from './FoodFilter';
+import UserData from './data/users';
+import Gravatars from './Gravatars';
 
 var names = ['Carl', 'Katie', 'Tyler', 'Bob', 'Jane', 'Nick', 'Doug'];
 
@@ -41,7 +43,8 @@ ReactDOM.render(
     {/*<HelloWorld names={names} /> */}
     {/*<App beverages={allBevs} />*/}
     {/*<NumberMapsAndFilters />*/}
-    <FoodFilter data={FoodData} />
+    {/*<FoodFilter data={FoodData} />*/}
+    <Gravatars data={UserData} />
   </div>,
   document.getElementById('root')
 );
