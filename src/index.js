@@ -9,6 +9,7 @@ import FoodData from './data/food';
 import FoodFilter from './FoodFilter';
 import UserData from './data/users';
 import Gravatars from './Gravatars';
+import Toggler from './Toggler';
 
 var names = ['Carl', 'Katie', 'Tyler', 'Bob', 'Jane', 'Nick', 'Doug'];
 
@@ -44,7 +45,8 @@ ReactDOM.render(
     {/*<App beverages={allBevs} />*/}
     {/*<NumberMapsAndFilters />*/}
     {/*<FoodFilter data={FoodData} />*/}
-    <Gravatars data={UserData} />
+    {/*<Gravatars data={UserData} />*/}
+    <Toggler />
   </div>,
   document.getElementById('root')
 );
